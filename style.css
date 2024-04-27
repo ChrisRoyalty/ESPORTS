@@ -1,0 +1,915 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Chakra Petch, sans-serif;
+}
+/* body {
+  background-color: #0f0913;
+} */
+.eSports {
+  width: 100%;
+  height: fit-content;
+  background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template-p-1600.jpeg);
+  animation: slideBackground 10s linear infinite;
+  background-repeat: none;
+}
+
+.navbar {
+  background-color: rgba(211, 211, 211, 0);
+  width: 100%;
+  margin: auto;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .container-fluid {
+  width: 92%;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar.opaque {
+  background-color: #0f0913;
+}
+main {
+  /* margin-top: 15vh; */
+  padding-top: 20vh;
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.main-content {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main h1,
+main p,
+main .buttons {
+  width: 60%;
+}
+main h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+main p {
+  font-size: 20px;
+}
+main .buttons {
+  display: flex;
+  gap: 20px;
+}
+main button {
+  border: none;
+  padding: 25px 52px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+main .btn1 {
+  background-color: #ff0040;
+}
+main .btn2 {
+  border: 2px solid white;
+  background-color: transparent;
+}
+main .btn2:hover {
+  box-shadow: rgb(2, 20, 20);
+  padding: 30px 60px;
+}
+main .btn2:hover {
+  background-color: #ff0040;
+  box-shadow: darkslategray;
+  border: none;
+  padding: 28px 55px;
+}
+
+.sponsors {
+  margin-top: 50px;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsors-content {
+  width: 92%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-top: 2px solid white;
+  padding-top: 60px;
+}
+.sponsors-content b {
+  font-size: 20px;
+}
+.sponsors-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.sponsor {
+  display: flex;
+  gap: 15px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0913;
+}
+.about-content {
+  width: 90%;
+  height: 85%;
+  position: relative;
+}
+.about-video {
+  width: 65%;
+  height: 100%;
+  float: right;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/lady.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-video .play {
+  font-size: 80px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.527);
+}
+.about-video a {
+  color: white;
+}
+.about-details {
+  position: absolute;
+  top: 100px;
+  width: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about h1 {
+  font-size: 52px;
+}
+.about p {
+  font-size: 18px;
+}
+.about button {
+  border: none;
+  padding: 25px 52px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff0040;
+}
+.follow .matches,
+.follow-us {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0913;
+}
+.matches-content,
+.follow-content {
+  width: 48%;
+  height: fit-content;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  line-height: 30px;
+}
+.matches h1 {
+  font-size: 52px;
+}
+.matches p {
+  font-size: 18px;
+}
+.match1,
+.match2,
+.match3 {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #11151e;
+}
+.match1 h1:hover,
+.match2 h1:hover,
+.match3 h1:hover {
+  color: #ff0040;
+}
+.match1-content {
+  width: 90%;
+  height: 80%;
+  background-image: url(images/bghome.jpeg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.match1-content:hover {
+  background-size: 120% 120%;
+}
+.match1 .content-list,
+.match2 .content-list,
+.match3 .content-list {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+.match1 .details,
+.match2 .details,
+.match3 .details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.match1 p,
+.match2 p,
+.match3 p {
+  font-size: 18px;
+}
+.match1 .fixture,
+.match2 .fixture,
+.match3 .fixture {
+  display: flex;
+  justify-content: space-between;
+}
+.match1 .date,
+.match1 .watch,
+.match2 .date,
+.match2 .watch,
+.match3 .date,
+.match3 .watch {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.follow-us h1 {
+  font-size: 22px;
+}
+.follow-us button {
+  border: none;
+  padding: 25px 52px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff0040;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(192, 182, 182, 0.15);
+}
+.follow-us button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  padding: 28px 55px;
+}
+
+.articles {
+  width: 100%;
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0913;
+}
+.articles-content {
+  width: 90%;
+  height: 80%;
+}
+.news {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.news h1 {
+  font-size: 52px;
+  font-weight: bold;
+}
+.news button {
+  border: none;
+  padding: 25px 52px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff0040;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(192, 182, 182, 0.15);
+}
+
+.updates {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles .headphones {
+  width: 54%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.articles .headphones img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.articles .headphones img:hover {
+  transform: scale(1.1);
+}
+.merch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.merch button {
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff0040;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(192, 182, 182, 0.15);
+}
+.headphones p {
+  color: white;
+  font-size: 18px;
+}
+.headphones a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  line-height: 40px;
+}
+.headphones a:hover {
+  color: #ff0040;
+}
+.articles .brands {
+  width: 44%;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: start;
+}
+.articles .brands img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.brand1,
+.brand2,
+.brand3,
+.brand4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.brand1:hover,
+.brand2:hover,
+.brand3:hover,
+.brand4:hover {
+  transform: scale(1.1);
+  color: #ff0040;
+}
+.getmerch {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/603686c9b7df9139e41fb0f5_bg-cta-esports-template.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease;
+  overflow: hidden;
+}
+.getmerch-content {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.getmerch-content:hover {
+  background-size: 120% 120%;
+}
+.getmerch h1 {
+  font-size: 52px;
+  width: 55%;
+}
+.getmerch button {
+  border: none;
+  padding: 25px 52px;
+  color: #ff0040;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(192, 182, 182, 0.15);
+}
+
+.getmerch button:hover {
+  color: #ffffff;
+  background-color: #ff0040;
+}
+
+.featured {
+  width: 100%;
+  height: 140vh;
+  background-color: #0f0913;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-content {
+  width: 92%;
+  height: 85%;
+  display: grid;
+}
+.featured-content h1 {
+  font-size: 52px;
+}
+.featured-content img {
+  background-color: #202128;
+}
+.featured .card-img {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+.featured .card-img img {
+  transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+  transform-origin: center;
+}
+.featured .card-img img:hover {
+  transform: scale(1.2); /* Adjust scale value to determine zoom level */
+}
+.product-details h5:hover {
+  color: #ff0040;
+}
+.featured .button {
+  width: 100%;
+  height: 20vh;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured .button button {
+  width: 20%;
+  height: 90px;
+}
+.follow {
+  height: fit-content;
+  background-color: #0f0913;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+}
+
+.follow-content {
+  width: 100%;
+  margin: 20px 0;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 24%;
+  gap: 0px;
+  padding: 0px !important;
+}
+.follow-content .card-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+.follow-content .card-item img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.767);
+  /* Adjust overlay color and opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition for hover effect */
+}
+.follow .overlay i {
+  font-size: 90px !important;
+  color: #fff; /* Icon color */
+  font-size: 50px; /* Adjust icon size as needed */
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+  height: 100;
+}
+
+.follow-content .card-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+.card-img2 {
+  background-color: gray;
+}
+footer {
+  background-color: #04070f;
+}
+footer .container {
+  padding-top: 150px;
+}
+footer ul {
+  list-style: none;
+}
+.footer-logo-container-margin {
+  margin-bottom: 30px;
+}
+
+.footer-align-right {
+  justify-content: end;
+}
+
+.footer-nav-title {
+  color: #f32c46;
+  letter-spacing: 0.1em;
+  margin-bottom: 23px;
+  font-size: 20px;
+  line-height: 1.1em;
+}
+
+.footer-nav-links {
+  margin-bottom: 0px;
+  margin-right: 29px;
+  text-decoration: none;
+  align-content: flex-end;
+  padding-left: 0px;
+}
+
+.footer-nav-links li {
+  margin-bottom: 20px;
+}
+
+.footer-nav-link {
+  color: white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: Chakra Petch, sans-serif;
+  line-height: 1.111em;
+  text-decoration: none;
+  transition: transform 0.25s, color 0.3s;
+  display: inline-block;
+  padding-inline-start: 0px !important;
+}
+
+.footer-nav-link-item {
+  display: list-item;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+
+.footer-small-print-wrapper {
+  text-align: center;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+
+.footer-small-print-wrapper a {
+  color: #f32c46;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.margin-nav {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .footer-nav-links {
+    margin-right: 0px !important;
+    max-width: 50% !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .eSports {
+    height: 250vh;
+  }
+  .navbar {
+    padding: 50px 0;
+  }
+  .navbar-nav {
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+  .navbar-nav li {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start !important;
+  }
+  .navbar-nav .btn {
+    width: 100%;
+  }
+
+  main h1,
+  main p,
+  main .buttons {
+    width: 100%;
+    font-size: 30px;
+  }
+  main h1 {
+    font-size: 60px;
+  }
+  .sponsors-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sponsors-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+  .matches,
+  .follow-us {
+    width: 100%;
+    height: 60vh;
+  }
+  .matches-content,
+  .follow-content {
+    width: 95%;
+  }
+
+  .articles {
+    height: 230vh;
+    padding: 0px 0px;
+  }
+
+  .articles-content {
+    width: 90%;
+    height: 90%;
+  }
+  .news {
+    flex-direction: column;
+    text-align: center;
+    height: fit-content;
+    padding: 25px 0px;
+    gap: 20px;
+  }
+  .news h1 {
+    font-size: 30px;
+  }
+  .news button {
+    width: 100%;
+  }
+  .merch {
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .merch button {
+    width: fit-content;
+    padding: 15px 8px;
+  }
+  .headphones a {
+    font-size: 22px;
+  }
+  .updates {
+    flex-direction: column;
+  }
+
+  .articles .headphones,
+  .articles .brands {
+    width: 100%;
+  }
+  .articles .brands {
+    grid-template-columns: 90%;
+    gap: 25px;
+  }
+  .articles .brands {
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .getmerch {
+    height: 60vh;
+  }
+  .getmerch-content {
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .getmerch h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .featured {
+    width: 100%;
+    height: 350vh;
+  }
+  .featured-content {
+    width: 92%;
+    height: 95%;
+    padding: 20px 0;
+  }
+  .featured .button button {
+    width: 90%;
+    height: 90px;
+  }
+}
+@media (max-width: 1100px) {
+  .navbar .container-fluid {
+    width: 100%;
+  }
+  .sponsors-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+  .about {
+    height: 120vh;
+  }
+  .about h1 {
+    font-size: 40px;
+  }
+  .about p {
+    font-size: 18px;
+  }
+  .about button {
+    border: none;
+    padding: 25px 52px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff0040;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: static;
+  }
+  .about-details {
+    position: static;
+    width: 100%;
+    order: 1;
+    padding: 15px 0;
+  }
+  .about-video {
+    order: 2;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .match1,
+  .match2,
+  .match3 {
+    height: 90vh;
+    padding: 0px 0px;
+  }
+
+  .match1 .content-list,
+  .match2 .content-list,
+  .match3 .content-list {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .follow-content {
+    width: 100%;
+    margin: 0px;
+    height: 60vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 0px;
+    border: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .eSports {
+    height: 220vh;
+  }
+  .navbar {
+    height: 15vh;
+  }
+  main {
+    height: 120vh;
+    /* padding-top: 30vh; */
+  }
+
+  main h1 {
+    font-size: 40px;
+  }
+  main .buttons {
+    flex-direction: column;
+  }
+  /* .sponsors {
+    margin-top: 25vh;
+  }
+  .sponsors-list {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+  } */
+  .sponsor {
+    font-size: 20px;
+  }
+  .featured {
+    width: 100%;
+    height: 350vh;
+  }
+  .featured-content {
+    width: 92%;
+    height: 95%;
+    padding: 20px 0;
+  }
+  .featured-content h1 {
+    font-size: 45px;
+  }
+}
+
+@keyframes slideBackground {
+  0% {
+    background-position: 0 0; /* Start position */
+  }
+  100% {
+    background-position: 0 100%; /* End position */
+  }
+}

@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Esports </title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra Petch">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+   
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles here */
+    body{
+      background-color:#04070f;
+
+    }
+    .navbar {
+  background-color: rgba(211, 211, 211, 0);
+  width: 100%;
+  margin: auto;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .container-fluid {
+  width: 92%;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar.opaque {
+  background-color: #04070f;
+}
+
+
+.about {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #04070f;
+}
+.about-content {
+  width: 90%;
+  height: 90% !important;
+  position: relative;
+}
+.about-video {
+  width: 65%;
+  height: 100%;
+  float: right;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6037d6576c6ef2d1f43c8dc2_image-about-hero-esports-template-p-1600.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-details {
+  position: absolute;
+  top: 100px;
+  width: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about h1 {
+  font-size: 52px;
+}
+.about p {
+  font-size: 18px;
+}
+.about button {
+  border: none;
+  padding: 25px 52px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff0040;
+}
+.sponsors {
+  margin-top: 50px;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsors-content {
+  width: 92%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-bottom: 2px solid gray;
+  padding-bottom: 70px;
+}
+.sponsors-content b {
+  font-size: 20px;
+}
+.sponsors-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 15px; */
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+.sponsors h1{
+  font-size: 80px;
+}
+
+
+.story {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #04070f;
+  position: relative;
+  margin-bottom: 100px;
+}
+.story-content {
+  width: 90%;
+  height: 90% !important;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.story-img {
+  width: 47%;
+  height: 100%;
+  /* float: right; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6037dc923324592368cfeede_image-1-story-esports-template-p-800.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.story-details {
+  margin-top: 100px;
+  width: 47%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.story h1 {
+  font-size: 52px;
+}
+.story p {
+  font-size: 18px;
+}
+.story button {
+  border: none;
+  padding: 25px 52px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff0040;
+}
+.storyImg2{
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  top: 70%;
+  right: 0;
+  /* float: right; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6037dc93ca4179a21fa05fe1_image-2-story-esports-template-p-1600.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.how {
+  margin-top: 100px;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #04070f;
+  position: relative;
+  top: 40vh;
+
+}
+.how-content {
+  width: 90%;
+  height: 90% !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.how-img {
+  width: 35%;
+  height: 65%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6037e2632f19c34e9c19de0c_image-1-about-start-esports-template.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.how-details {
+  margin-top: 100px;
+  width: 47%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.how h1 {
+  font-size: 52px;
+}
+.how p {
+  font-size: 18px;
+}
+
+.howImg2{
+  position: absolute;
+  width: 35%;
+  height: 68%;
+  bottom: 0;
+  right: 12%;
+  /* float: right; */
+  background: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6037e263ffd5a1c8b428c8db_image-2-about-start-esports-template.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.follow {
+  margin-top: 40vh;
+  height: fit-content;
+  background-color: #04070f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+}
+
+.follow-content {
+  width: 100%;
+  margin: 20px 0;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 24%;
+  gap: 0px;
+  padding: 0px !important;
+}
+.follow-content .card-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+.follow-content .card-item img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.767);
+  /* Adjust overlay color and opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition for hover effect */
+}
+.follow .overlay i {
+  font-size: 90px !important;
+  color: #fff; /* Icon color */
+  font-size: 50px; /* Adjust icon size as needed */
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+  height: 100;
+}
+
+.follow-content .card-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+.card-img2 {
+  background-color: gray;
+}
+footer {
+  background-color: #04070f;
+}
+footer .container {
+  padding-top: 150px;
+}
+footer ul {
+  list-style: none;
+}
+.footer-logo-container-margin {
+  margin-bottom: 30px;
+}
+
+.footer-align-right {
+  justify-content: end;
+}
+
+.footer-nav-title {
+  color: #f32c46;
+  letter-spacing: 0.1em;
+  margin-bottom: 23px;
+  font-size: 20px;
+  line-height: 1.1em;
+}
+
+.footer-nav-links {
+  margin-bottom: 0px;
+  margin-right: 29px;
+  text-decoration: none;
+  align-content: flex-end;
+  padding-left: 0px;
+}
+
+.footer-nav-links li {
+  margin-bottom: 20px;
+}
+
+.footer-nav-link {
+  color: white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: Chakra Petch, sans-serif;
+  line-height: 1.111em;
+  text-decoration: none;
+  transition: transform 0.25s, color 0.3s;
+  display: inline-block;
+  padding-inline-start: 0px !important;
+}
+
+.footer-nav-link-item {
+  display: list-item;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+
+.footer-small-print-wrapper {
+  text-align: center;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+
+.footer-small-print-wrapper a {
+  color: #f32c46;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.margin-nav {
+  margin-bottom: 50px;
+}
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 50px 0;
+  }
+  .navbar-nav {
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+  .navbar-nav li {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start !important;
+  }
+  .navbar-nav .btn {
+    width: 100%;
+  }
+.sponsors{
+  height: 60vh;
+  padding: 0;
+
+}
+ 
+  .sponsors-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sponsors-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+
+  /* story */
+ .story {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #04070f;
+  position: relative;
+  padding: 20px 0;
+
+}
+.story-content {
+  position: static !important;
+}
+.story-img {
+  display: none;
+  width: 80%;
+  order: 2;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6037dc923324592368cfeede_image-1-story-esports-template-p-800.jpeg);
+    background-position: center;
+}
+.story-details {
+  order: 1;
+  margin-top: 100px;
+  width: 100% !important;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.story h1 {
+  font-size: 30px;
+}
+
+.storyImg2{
+  position: static !important;
+  width: 90% !important;
+  height: 45%;
+  margin-top: 10%;
+  left: 0;
+}
+.story-content button{
+  width: 100% !important;
+}
+ 
+
+.how {
+
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #04070f;
+  position: relative;
+  top: 0vh;
+
+}
+.how-content {
+  width: 100%;
+  position: relative;
+}
+.how-img {
+  width: 70%;
+  height: 68%;
+  position: absolute;
+  top: 110%;
+  left: 0;
+
+}
+.howImg2{
+  position: absolute;
+  width: 50%;
+  height: 65%;
+  top: 120%;
+  right: 0;
+  
+}
+.how-details {
+  margin-top: 100px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.how h1 {
+  font-size: 35px;
+}
+
+
+}
+@media (max-width: 1100px) {
+  .navbar .container-fluid {
+    width: 100%;
+  }
+  .sponsors-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+  .about {
+    height: 120vh;
+  }
+  .about h1 {
+    font-size: 40px;
+  }
+  .about p {
+    font-size: 18px;
+  }
+  .about button {
+    border: none;
+    padding: 25px 52px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff0040;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: static;
+  }
+  .about-details {
+    position: static;
+    width: 100%;
+    order: 1;
+    padding: 15px 0;
+  }
+  .about-video {
+    order: 2;
+    width: 100%;
+    height: 50vh;
+  }
+
+ /* story */
+ .story {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #04070f;
+  position: relative;
+}
+.story-content {
+  width: 90%;
+  height: 90% !important;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.story-img {
+  order: 2;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6037dc923324592368cfeede_image-1-story-esports-template-p-800.jpeg);
+    background-position: center;
+}
+.story-details {
+  order: 1;
+  margin-top: 100px;
+  width: 47%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.story h1 {
+  font-size: 30px;
+}
+
+.storyImg2{
+  position: absolute;
+  width: 80%;
+  height: 45%;
+  top: 70%;
+  left: 0;
+
+}
+.follow{
+  margin-top: 100vh;
+}
+.follow-content {
+    width: 100%;
+    margin: 0px;
+    height: 60vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 0px;
+    border: none;
+  }
+ 
+}
+@media screen and (max-width: 500px) {
+  .navbar {
+    height: 15vh;
+  }
+  .sponsors{
+  height: 70vh;
+  padding: 0;
+
+}
+  .sponsor {
+    font-size: 20px;
+  }
+  .sponsors h1{
+    font-size: 40px;
+  }
+  
+}
+
+@keyframes slideBackground {
+  0% {
+    background-position: 0 0; /* Start position */
+  }
+  100% {
+    background-position: 0 100%; /* End position */
+  }
+}
+  </style>
+</head>
+
+<body>
+  <nav class="container-fluid navbar navbar-expand-lg py-4 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="width: 30%">
+        <img src="images/esports_logo.svg" alt="">
+      </a>
+      <button
+        class="navbar-toggler bg-danger text-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="background-color: #04070f; padding: 10px 0;">
+        <ul class="navbar-nav">
+          <li class="nav-item d-flex justify-between align-items-center gap-3">
+            <a class="nav-link text-white fw-bold" href="#">HOME</a>
+            <a class="nav-link text-white fw-bold" href="about.html">ABOUT</a>
+            <a class="nav-link text-white fw-bold" href="#">TEAM</a>
+            <a class="nav-link text-white fw-bold" href="#">SHOP</a>
+            <a class="nav-link text-white fw-bold" href="#">CONTACT</a>
+          </li>
+          <li class="nav-item d-flex justify-between align-items-center gap-3">
+            <a class="nav-link text-white fw-bold" href="#">CART(0)</a>
+            <a
+              class="nav-link text-white fw-bold bg-danger p-3 btn"
+              href="#"
+              style="width: 100%"
+              >BUY MERCH</a
+            >
+          </li>
+
+      </div>
+    </div>
+    
+  </nav>
+  <div class="container-fluid about animate__animated animate__fadeInDown animate__delay-1s" style="margin-top: 20vh;">
+    <div class="container about-content">
+      <div class="about-video">
+        <div class="play">
+         
+        </div>
+      </div>
+      <div class="about-details">
+        <h1>ABOUT THE DRAGON ESPORTS TEAM</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+          convallis tortor, malesuada vitae tortor. Dignissim ac aliquam ut
+          sed eu. Eget nulla elit, ac habitant.
+        </p>
+        <div class="buttons">
+          <button class="btn">MEET THE TEAM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid sponsors animate__fadeOutUp-2s">
+    <div class="container sponsors-content animate__animated animate__flipInY">
+      <b>OUR RESULTS</b>
+      <div class="sponsors-list">
+        <div class="sponsor">
+          <h1 class="text-white fw-bold">35<span class="text-danger">+</span></h1>
+          <p class="fs-5 fw-light">TOURNAMENT</p>
+        </div>
+        <div class="sponsor">
+          <h1 class="text-white fw-bold">20<span class="text-danger">+</span></h1>
+          <p class="fs-5 fw-light">GLOBAL AWARDS</p>
+        </div>
+        <div class="sponsor">
+          <h1 class="text-white fw-bold">14<span class="text-danger">+</span></h1>
+          <p class="fs-5 fw-light">TEAM MEMBERS</p>
+        </div>
+        <div class="sponsor">
+          <h1 class="text-white fw-bold p-0">8<span class="text-danger">+</span></h1>
+          <p class="fs-5 fw-light">YEARS GOING</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid story animate__animated animate__fadeInDown animate__delay-1s" style="margin-top: 20vh;">
+    <div class="container story-content">
+      <div class="story-img"></div>
+      <div class="story-details">
+        <h1>ABOUT THE DRAGON ESPORTS TEAM</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+          convallis tortor, malesuada vitae tortor. Dignissim ac aliquam ut
+          sed eu. Eget nulla elit, ac habitant.
+        </p>
+        <div class="buttons">
+          <button class="btn">MEET THE TEAM</button>
+        </div>
+      </div>
+    </div>
+    <div class="storyImg2"></div>
+  </div>
+
+  <div class="container-fluid how animate__animated animate__fadeInDown animate__delay-1s">
+    <div class="container how-content">
+      <div class="how-details">
+        <h1 class="animate__animated animate__backInLeft animate__delay-12s">HOW DRAGON ESPORTS STARTED</h1>
+        <p class="animate__animated animate__backInLeft animate__delay-12s">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. At at gravida platea congue. Gravida viverra id ac dui blandit in sed phasellus. Amet nisl sagittis feugiat in lacus. Lectus tellus erat lectus netus a luctus amet sollicitudin montes. Tristique amet viverra platea semper. Volutpat quam interdum commodo diam, id interdum fusce vestibulum. Quam orci, vel penatibus sed. Pharetra aenean porttitor commodo, nulla tortor amet faucibus. Vulputate.
+        </p>
+       
+      </div>
+      <div class="how-img animate__animated animate__backInRight animate__delay-12s"></div>
+      <div class="howImg2 animate__animated animate__backInRight animate__delay-12s"></div>
+    </div>
+  </div>
+  <div class="follow">
+    <h2 class="text-center text-white fw-bold my-5">FOLLOW US ON <strong class="text-danger">INSTAGRAM</strong></h2>
+      <div class="follow-content">
+        <div class="card-img1 card-item">
+          <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b708e2a43ff43aa946b_image-1-instagram-esports-template.jpg" alt="">
+          <div class="overlay animate__animated animate__bounceInDown">
+            <i class="bi bi-instagram"></i> <!-- Icon for hover effect -->
+        </div>
+        </div>
+        <div class="card-img2 card-item">
+          <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b707818036059a6a461_image-2-instagram-esports-template-p-500.jpeg" alt="">
+          <div class="overlay">
+            <i class="bi bi-instagram"></i> <!-- Icon for hover effect -->
+        </div>
+        </div>
+        <div class="card-img3 card-item">
+          <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b70585da2e5a4df97a3_image-3-instagram-esports-template-p-500.jpeg" alt="">
+          <div class="overlay">
+            <i class="bi bi-instagram"></i> <!-- Icon for hover effect -->
+        </div>
+        </div>
+        <div class="card-img4 card-item">
+          <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b708a74a47d39b46056_image-4-instagram-esports-template.jpg" alt="">
+          <div class="overlay">
+            <i class="bi bi-instagram"></i> <!-- Icon for hover effect -->
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <footer class="text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row ">
+            <div class="col-md-3">
+
+              <div class="footer-logo-container-margin  animate_animated animate_backInLeft">
+                <a href="#">
+                  <img
+                    src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60359b25d811e171f69cedde_logo-esports-template.svg"
+                    alt="eSports Webflow Template - Logo" class="footer-logo">
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+                  convallis tortor.</p>
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-12  footer-align-right animate_animated animate_backInLeft">
+              <div class="row justify-content-end">
+                <div class="col-md-5 col-sm-12">
+                  <div class="row">
+
+                    <h2 class="title footer-nav-title text-danger">Pages</h2>
+                    <div class="col-sm-6 col-md-6 col-lg-6 margin-nav">
+
+                      <ul class="footer-nav-links">
+                        <li><a href="#" class="footer-nav-link">Home</a></li>
+                        <li><a href="about.html" class="footer-nav-link">About</a></li>
+                        <li><a href="#" class="footer-nav-link">Team</a></li>
+                        <li><a href="#" class="footer-nav-link">Team</a></li>
+                        <li><a href="#" class="footer-nav-link">News</a></li>
+                        <li><a href="" class="footer-nav-link">News Individual</a></li>
+                      </ul>
+                    </div>
+                    <div class="margin-nav col-sm-6 col-md-6 col-lg-6">
+                      <ul class="footer-nav-links">
+                        <li class="footer-nav-link-item"><a href="#" class="footer-nav-link">Shop</a></li>
+                        <li class="footer-nav-link-item"><a href="#" class="footer-nav-link">Shop CMS</a></li>
+                        <li class="footer-nav-link-item"><a href="#" class="footer-nav-link">Contact</a></li>
+                        <li class="footer-nav-link-item"><a href="#" class="footer-nav-link">Sponsors</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-4 col-sm-6 margin-nav  animate_animated animate_backInLeft">
+                  <h2 class="title footer-nav-title text-danger">Utility Pages</h2>
+                  <ul class="footer-nav-links">
+                    <li><a href="#" class="footer-nav-link">Style guide</a></li>
+                    <li><a href="#" class="footer-nav-link">Start Here</a></li>
+                    <li><a href="#" class="footer-nav-link">404 Not Found</a></li>
+                    <li><a href="#" class="footer-nav-link">Password Protected</a></li>
+                    <li><a href="#" class="footer-nav-link">Licenses</a></li>
+                    <li><a href="#" class="footer-nav-link">Changelog</a></li>
+                    <li><a href="#" class="footer-nav-link special">Browse More Templates</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-2 col-sm-6 margin-nav  animate_animated animate_backInLeft">
+                  <h2 class="title footer-nav-title text-danger">Follow Us</h2>
+                  <ul class="footer-nav-links">
+                    <li><a href="https://www.facebook.com/" target="_blank"
+                        class="footer-nav-link social-media w-inline-block d-flex gap-2 align-items-center">
+                        <i class="bi bi-facebook text-white bg-danger py-1 px-2"></i>Facebook</a></li>
+                    <li><a href="https://twitter.com/" target="_blank"
+                        class="footer-nav-link social-media w-inline-block d-flex gap-2 align-items-center"> <i class="bi bi-twitter text-white bg-danger py-1 px-2"></i>Twitter</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"
+                        class="footer-nav-link social-media w-inline-block d-flex gap-2 align-items-center"> <i class="bi bi-instagram text-white bg-danger py-1 px-2"></i>Instagram</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"
+                        class="footer-nav-link social-media w-inline-block d-flex gap-2 align-items-center"> <i class="bi bi-youtube text-white bg-danger py-1 px-2"></i>Youtube</a></li>
+                    <li><a href="https://www.twitch.tv/" target="_blank"
+                        class="footer-nav-link social-media w-inline-block d-flex gap-2 align-items-center"> <i class="bi bi-twitch text-white bg-danger py-1 px-2"></i>Twitch</a></li>
+                    <li><a href="https://www.tiktok.com/" target="_blank"
+                        class="footer-nav-link social-media w-inline-block d-flex gap-2 align-items-center"> <i class="bi bi-tiktok text-white bg-danger py-1 px-2"></i>TikTok</a></li>
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="footer-small-print-wrapper  animate_animated animate_backInDown">
+              <div>Copyright © eSports | Designed by <a href="#" target="blank">___</a> - Powered by <a href="#"
+                  target="blank">____</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
