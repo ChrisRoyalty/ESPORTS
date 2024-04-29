@@ -871,6 +871,7 @@ footer ul {
   }
   .navbar {
     height: 15vh;
+    width: 100% !important;
   }
   main {
     height: 80vh;
@@ -897,6 +898,9 @@ footer ul {
   }
   .featured-content h1 {
     font-size: 45px;
+  }
+  footer {
+    width: 100% !important;
   }
 }
 
