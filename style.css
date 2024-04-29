@@ -18,11 +18,12 @@
 .navbar {
   background-color: rgba(211, 211, 211, 0);
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0%;
 }
 .navbar .container-fluid {
   width: 92%;
@@ -541,7 +542,6 @@ main .btn2:hover {
   height: 100%;
   position: relative;
   overflow: hidden;
-  margin: 10px;
 }
 .follow-content .card-item img {
   width: 100%;
@@ -871,7 +871,6 @@ footer ul {
   }
   main {
     height: 120vh;
-    /* padding-top: 30vh; */
   }
 
   main h1 {
@@ -880,14 +879,7 @@ footer ul {
   main .buttons {
     flex-direction: column;
   }
-  /* .sponsors {
-    margin-top: 25vh;
-  }
-  .sponsors-list {
-    display: grid;
-    grid-template-columns: auto;
-    text-align: center;
-  } */
+
   .sponsor {
     font-size: 20px;
   }
