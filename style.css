@@ -689,6 +689,9 @@ footer ul {
   main h1 {
     font-size: 60px;
   }
+  main p {
+    font-size: 18px;
+  }
   .sponsors-content {
     flex-direction: column;
     gap: 20px;
@@ -870,7 +873,7 @@ footer ul {
     height: 15vh;
   }
   main {
-    height: 120vh;
+    height: 80vh;
   }
 
   main h1 {
