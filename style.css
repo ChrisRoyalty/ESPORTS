@@ -656,7 +656,7 @@ footer ul {
 @media (max-width: 767px) {
   .footer-nav-links {
     margin-right: 0px !important;
-    max-width: 50% !important;
+    /* max-width: 50% !important; */
   }
 }
 
