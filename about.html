@@ -16,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Chakra Petch"
@@ -293,6 +294,7 @@
         grid-template-columns: 25% 25% 25% 24%;
         gap: 0px;
         padding: 0px !important;
+        position: relative;
       }
       .follow-content .card-item {
         width: 100%;
@@ -351,6 +353,9 @@ footer ul{
 footer a{
   text-decoration: none;
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 footer a:hover{
   /* color: #ff0040 !important; */
@@ -359,6 +364,7 @@ footer a:hover{
 footer h3{
   color: #ff0040;
   font-size: 20px;
+  margin-bottom: 10px;
 }
       @media (max-width: 991.98px) {
         .navbar {
@@ -678,7 +684,7 @@ footer h3{
     >
       <div class="container about-content">
         <div class="about-video">
-          <div class="play"></div>
+          <div class=""></div>
         </div>
         <div class="about-details">
           <h1>ABOUT THE DRAGON ESPORTS TEAM</h1>
@@ -837,7 +843,7 @@ footer h3{
             <div class="heading">
               <h3>PAGES</h3>
               <div class="container-fluid">
-                <div class="row">
+                <div class="d-flex">
                   <ul class="col">
                     <li><a class="text-white" href="">HOME</a></li>
                     <li><a class="text-white" href="">ABOUT</a></li>
