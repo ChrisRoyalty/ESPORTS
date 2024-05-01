@@ -189,6 +189,11 @@ main .btn2:hover {
   justify-content: center;
   background-color: #0f0913;
 }
+.about-main {
+  margin-top: 20vh;
+  background-color: #04070f;
+}
+
 .about-content {
   width: 90%;
   height: 85%;
@@ -914,11 +919,27 @@ footer ul {
   font-weight: bold;
   font-size: 22px;
 }
+.contact-bg {
+  margin-top: 50px;
+  background-color: #2a2e36;
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+  margin-bottom: 100px;
+  color: white;
+}
+.contact-bg a {
+  color: red;
+}
 
 @media (max-width: 767px) {
   .footer-nav-links {
     margin-right: 0px !important;
     /* max-width: 50% !important; */
+  }
+  .achievements-title {
+    margin-top: 70px;
   }
 }
 
@@ -1051,6 +1072,9 @@ footer ul {
   .featured .button button {
     width: 90%;
     height: 90px;
+  }
+  .achievements-title {
+    margin-top: 70px;
   }
 }
 @media (max-width: 1100px) {
@@ -1228,12 +1252,19 @@ footer ul {
     width: fit-content;
     padding: 0px 10px;
   }
+  .esports-contact main {
+    padding-top: 0vh !important;
+    height: fit-content;
+    border: 4px solid white;
+  }
 }
 @media screen and (max-width: 576px) {
   .eSports {
     height: 130vh;
   }
-
+  .navbar {
+    height: fit-content;
+  }
   main {
     height: 80vh;
   }
@@ -1285,6 +1316,12 @@ footer ul {
   }
   .story-details h1 {
     font-size: 35px;
+  }
+  .achievements-title {
+    margin-top: 70px;
+  }
+  .about-main {
+    margin-top: 10vh;
   }
 }
 
