@@ -43,7 +43,6 @@
   background-color: #0f0913;
 }
 main {
-  /* margin-top: 15vh; */
   padding-top: 15vh;
   width: 100%;
   height: 110vh;
@@ -124,6 +123,7 @@ main .btn2:hover {
   justify-content: center;
   align-items: center;
 }
+
 .about-details {
   position: absolute;
   top: 100px;
@@ -206,6 +206,10 @@ main .btn2:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-about-video {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/6037d6576c6ef2d1f43c8dc2_image-about-hero-esports-template-p-1600.jpeg);
 }
 .about-video .play {
   font-size: 80px;
@@ -701,6 +705,215 @@ footer ul {
 .margin-nav {
   margin-bottom: 50px;
 }
+.achievements {
+  background-color: #04070f;
+  color: white;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.achievements .container {
+  border-bottom: 2px solid lightgray;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.achievements .result-number {
+  font-size: 72px;
+  font-weight: bold;
+  color: white;
+}
+.achievements span {
+  color: #f32c46;
+}
+.achievements .result-text {
+  font-size: 22px;
+}
+.story {
+  width: 100%;
+  height: 180vh;
+  background-color: #04070f;
+}
+.story .container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.story .img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 60%;
+}
+.story .img2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 60%;
+}
+.story-details {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 42%;
+  height: fit-content;
+  color: white;
+}
+.story-details h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.story-details button {
+  background-color: #f32c46;
+  color: white;
+  width: 60%;
+  height: 80px;
+  font-weight: bold;
+  border: none;
+  font-size: 20px;
+}
+.how {
+  background-color: #04070f;
+  height: fit-content;
+  color: white;
+  padding: 100px 0;
+}
+.how h1 {
+  font-weight: bold;
+  font-size: 55px;
+}
+.how p {
+  line-height: 30px;
+}
+.how .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120vh;
+  position: relative;
+  /* padding: 100px 0; */
+}
+.how-details {
+  width: 45%;
+  /* position: absolute; */
+}
+.how-imgs {
+  width: 50%;
+  height: 80vh;
+  background-color: #11151e;
+}
+.how-imgs img {
+  width: 100%;
+  position: absolute;
+}
+.how-imgs .img1 img {
+  width: 40%;
+  height: 65%;
+  top: 0;
+  right: 0;
+}
+.how-imgs .img2 img {
+  width: 40%;
+  height: 70%;
+  bottom: 0;
+  right: 5%;
+}
+.awards {
+  background-color: #04070f;
+}
+.awards-intro {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+.about-follow {
+  background-color: #04070f;
+}
+.team-intro {
+  display: flex !important;
+  flex-direction: row;
+  text-align: start !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-intro .intro-text {
+  width: 60%;
+  color: white;
+}
+.team-intro button {
+  width: 20%;
+  height: 80px;
+  background-color: #f32c46;
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+}
+.team-esports {
+  background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/603810f50c0e56435c5367de_bg-blog-hero-esports-template-p-2000.jpeg);
+}
+.team-esports main {
+  padding-top: 0vh;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.team-esports h1 {
+  font-size: 72px;
+}
+.subscribe {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://assets-global.website-files.com/60358955e12a8a2413b99edc/60393168d625230e70b70d02_bg-shop-newsletter-esports-template-p-1600.jpeg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease;
+  overflow: hidden;
+  color: white;
+}
+.subscribe h1 {
+  font-size: 55px;
+  font-weight: bold;
+}
+.subscribe .form {
+  display: flex;
+}
+.subscribe input {
+  width: 68%;
+  height: 80px;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 22px;
+}
+.subscribe button {
+  width: 32%;
+  height: 80px;
+  border: none;
+  outline: none;
+  margin-right: 5px;
+  background-color: #f32c46;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
 
 @media (max-width: 767px) {
   .footer-nav-links {
@@ -850,7 +1063,7 @@ footer ul {
     text-align: center;
   }
   .about {
-    height: 120vh;
+    height: 100vh !important;
   }
   .about h1 {
     font-size: 40px;
@@ -913,15 +1126,114 @@ footer ul {
     gap: 0px;
     border: none;
   }
+
+  .achievements .container {
+    height: fit-content;
+    padding-top: 0px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .story {
+    height: fit-content;
+    display: flex;
+  }
+  .story,
+  .story-details,
+  .story .imgs {
+    position: static;
+  }
+  .story .imgs,
+  .story-details {
+    height: 50vh;
+  }
+  .story-details {
+    order: 1;
+    width: 100%;
+    height: fit-content;
+  }
+  .story .imgs {
+    position: relative;
+    order: 2;
+    margin-top: 40px;
+  }
+
+  .how .container {
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    gap: 40px;
+    /* padding: 100px 0; */
+  }
+  .how-details {
+    width: 100%;
+  }
+  .how-details h1 {
+    font-size: 35px;
+  }
+  .how-imgs {
+    width: 100%;
+    height: 80vh;
+    background-color: #11151e;
+    position: relative;
+  }
+  .how-imgs .img1 img {
+    width: 70%;
+    height: 65%;
+    top: 0;
+    left: 0;
+  }
+  .how-imgs .img2 img {
+    width: 65%;
+    height: 70%;
+    bottom: 0;
+    right: 0;
+  }
+  .awards,
+  .about-team {
+    height: fit-content !important;
+    padding: 70px 0;
+  }
+  .awards-intro {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .team-intro {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    text-align: center !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .team-intro .intro-text {
+    width: 100%;
+  }
+  .team-intro button {
+    width: 100%;
+  }
+  .team-esports {
+    height: 70vh !important;
+  }
+  .team-esports main {
+    height: 80vh;
+  }
+  .subscribe h1 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  .subscribe button {
+    width: fit-content;
+    padding: 0px 10px;
+  }
 }
 @media screen and (max-width: 576px) {
   .eSports {
     height: 130vh;
   }
-  .navbar {
-    height: 15vh;
-    width: 100% !important;
-  }
+
   main {
     height: 80vh;
   }
@@ -935,6 +1247,9 @@ footer ul {
 
   .sponsor {
     font-size: 20px;
+  }
+  .about h1 {
+    font-size: 30px;
   }
   .featured {
     width: 100%;
@@ -967,6 +1282,9 @@ footer ul {
   }
   footer {
     width: 100% !important;
+  }
+  .story-details h1 {
+    font-size: 35px;
   }
 }
 
